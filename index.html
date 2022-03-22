@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Alexander's CV</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="assets/favicon.ico">
+    <meta name="description" content="Alexander's CV">
+    <meta property="og:title" content="CV for RS School">
+    <meta property="og:description" content="Alexander's CV">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+</head>
+    <header>
+        <div class="fullscreen block header">
+            <div class='title'>
+                <h2>Alexander's CV</h2>
+            </div>
+            <div class='image'>
+                <img src="https://rs.school/images/rs_school_js.svg" width="200" height="120" alt="Лого курса">
+            </div>
+        </div>
+    </header>
+
+    <body>
+
+        <div class="content">
+
+            <div class="block menu">
+                <div class='menu-item'><a href="#contacts">Contacts</a></div>
+                <div class='menu-item'><a href="#aboutMe">About Me</a></div>
+                <div class='menu-item'><a href="#skills">Skills</a></div>
+                <div class='menu-item'><a href="#codeExample">Code Example</a></div>
+                <div class='menu-item'><a href="#education">Education</a></div>
+                <div class='menu-item'><a href="#english">English</a></div>
+            </div>
+
+            <div class="block text">
+                <p><img src="photos/GlA33jn3NXk.jpg" width="220" height="220" align="left" >
+                <br>
+                     <big>Alexander Shmidt</big>
+                <br>
+                      <p><a name="contacts"><b>Contacts:</b></a></p>
+                      <br>
+                      <p><b>Location:</b> Saratov, Russia.</p>
+                      <p><b>Phone Number:</b> +7(927)050-43-89</p>
+                      <p><b>Email:</b> worldfoner@gmail.com</p>
+                      <p><b>GitHub:</b> AlexUnderR95</p>
+                <br>
+                <br>
+                    <p><a name="aboutMe"><b>About Me:</b></a></p>
+                    <ul>
+                        <li>Open to new knowledge and fast learner</li>
+                        <li>Communicable and non-conflicting</li>
+                        <li>Attentive to details</li>
+                    </ul>
+                <br>
+                    <p><a name="skills"><b>Skills:</b></a></p>
+                    <ul>
+                        <li>HTML5,CSS3</li>
+                        <li>JavaScript Basics, C# Bascs</li>
+                        <li>Git, GitHub</li>
+                        <li>VS Code, VS community</li>
+                        <li>Adobe Photoshop, Premiere pro, Blender, 3DMax</li>
+                    </ul>
+                <br>
+                    <p><a name="codeExample"><b>Code Example:</b></a></p>
+                    <p>The following code example contains a console program for finding the minimum value in an array and for finding the sum of even numbers in an array based on C#</p>
+                    <pre><code>
+                        static void Main(string[] args)
+                        {
+                            int sumOfEvenNumber = 0;
+                            Console.Write("Enter the number of array elements:\t");
+                            
+                            int elementCount = int.Parse(Console.ReadLine());
+                           
+                            int[] myArray = new int[elementCount];
+                
+                            for (int i = 0; i < myArray.Length; i++)
+                            {
+                                Console.Write($"Enter array element with index {i}:\t ");
+                                myArray[i] = int.Parse(Console.ReadLine());
+                            }
+                            int min = myArray[0];
+                
+                            for (int i = 0; i < myArray.Length; i++)
+                            {
+                                if (myArray[i] % 2 == 0)
+                                {
+                                    sumOfEvenNumber = sumOfEvenNumber + myArray[i];
+                                }
+                                if (myArray[i] < min)
+                                {
+                                    min = myArray[i];
+                                }
+                            }
+                
+                            Console.WriteLine("Your Array");
+                
+                            for (int i = myArray.Length - 1; i >= 0; i--)
+                            {
+                                Console.WriteLine(myArray[i]);
+                            }
+                            Console.WriteLine("Sum of even numbers: " + sumOfEvenNumber);
+                
+                            Console.WriteLine("Min number in array: " + min);
+                
+                            Console.ReadLine();
+                        }
+                    </code></pre>
+                    <p><a name="education"><b>Education:</b></a></p>
+                    <ul>
+                        <li>Saratov State University named after Chernyshevsky. Faculty of Nonlinear Processes (2 years)</li>
+                        <li>C# course by lessons on YouTube from #SimpleCode</li>
+                        <li>Basics of HTML, CSS, JS (https://ru.code-basics.com/)</li>
+                    </ul>
+                    <p><a name="english:"><b>English:</b></a></p>
+                    <p>English level B1 (From time to time I communicate with my foreign friends)</p>
+            </div>
+        </div>
+    </body>
+        <footer>
+            <p class="fullscreen block footer">Made by Alexander Shmidt. 2022.</p>
+        </footer>
