@@ -69,6 +69,7 @@ The following code example contains a console program for finding the minimum va
     }
 }
 ```
+
 **Education:**
 ---
  * Saratov State University named after Chernyshevsky. Faculty of Nonlinear Processes (2 years)
